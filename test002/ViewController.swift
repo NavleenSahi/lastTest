@@ -6,6 +6,7 @@
 //  Copyright © 2019 Navleen. All rights reserved.
 //
 
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -18,11 +19,19 @@ class ViewController: UIViewController {
     var isTimerRunning = false
     
     @objc func startTimer() {
+        
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,selector: (#selector(ViewController.startTimer)), userInfo: nil, repeats: true)
     }
     
+    @IBOutlet weak var displayLabel: UILabel!
+  
+    
+    //run the timer
     @IBAction func startButton(_ sender: Any) {
            startTimer()
+        
+       
+        displayLabel.text="Start button pushed"
        }
     
     func updateTimer() {
