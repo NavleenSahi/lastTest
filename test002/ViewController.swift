@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     @IBAction func startButton(_ sender: Any) {
            startTimer()
         
-       
+        //extra label to print
         displayLabel.text="Start button pushed"
        }
     
