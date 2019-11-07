@@ -9,7 +9,7 @@ void setup() {
 
 void loop() {
     
-      b.ledOn(1, 255, 255, 255);
+       b.ledOn(1, 255, 255, 255);
        b.ledOn(3, 255, 255, 255);
         b.ledOn(4, 255, 255, 255);
         b.ledOn(5, 255, 255, 255);
@@ -37,6 +37,11 @@ void loop() {
         delay(1000);
         b.allLedsOff();
         b.ledOn(1, 255, 255, 255);
+        b.ledOn(6, 255, 255, 255);
+        b.ledOn(11, 255, 255, 255);
+        delay(1000);
+        b.allLedsOff();
+         b.ledOn(1, 255, 255, 255);
         b.ledOn(11, 255, 255, 255);
         delay(1000);
         b.allLedsOff();
